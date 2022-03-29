@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fffcf2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.16);
+}
+nav > a {
+  margin-left: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #252422;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 13px 40px;
+  transition: all 0.6ms ease-in-out;
+  text-transform: uppercase;
+}
+nav a:hover {
+  color: #eb5e28;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+}
+
+:root {
+  --gray: rgb(168, 167, 167);
+  --orange: #e63922;
+}
+
+.subtitle {
+  color: var(--gray);
+}
+.orange {
+  color: var(--orange);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+div.main {
+  width: 100%;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+/* RIGHT */
+div.right {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  width: 90%;
+  box-shadow: 1px 18px 37px -9px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: 1px 18px 37px -9px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 1px 18px 37px -9px rgba(0, 0, 0, 0.28);
+  margin-left: 30px;
+}
+
+/* info */
+
+div.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+div.info label,
+div.info p {
+  font-weight: 400;
+  line-height: 2;
+  color: rgb(54, 54, 54);
+  display: inline-block;
+}
+div.info input,
+textarea {
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1.5px solid rgb(206, 203, 203);
+  resize: none;
+}
+div.info input:focus,
+textarea:focus {
+  outline: 1.5px solid #ff725e;
+  box-shadow: 0px 0 5px #ff725e;
+}
+div.info input:last-of-type {
+  background-color: #eb5e28;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  color: white;
+  margin-top: 15px;
+}
