@@ -71,3 +71,52 @@ div.description span {
   font-size: 5rem;
   color: #eb5e28;
 }
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eb5e28;
+  width: 100%;
+  position: relative;
+  top: 200px;
+}
+.social {
+  margin: 20px;
+  width: 400px;
+  text-align: center;
+  background-color: #eb5e28;
+}
+.social a {
+  font-size: 1.5rem;
+  color: white;
+  margin: 20px;
+  background-color: #eb5e28;
+}
+.social i {
+  background-color: #eb5e28;
+}
+.social a:hover {
+  color: #fd2600;
+}
+div.foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  background-color: #eb5e28;
+}
+.foot p {
+  font-size: 1.1rem;
+  color: white;
+  background-color: #eb5e28;
+}
+.foot p:hover {
+  text-decoration: underline;
+}
+.foot p:hover:last-of-type {
+  text-decoration: none;
+}
